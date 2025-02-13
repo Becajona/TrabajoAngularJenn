@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { ContadorComponent1 } from './contador/contador.component';
 import { PersonajeComponent } from './personajes/personaje/personaje.component';
 import { ListadoComponent } from './personajes/listado/listado.component';
+import { PersonajeModulo } from './personajes/personaje.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PersonajeComponent,
+    //PersonajeComponent,
     ListadoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ContadorComponent1
+    ContadorComponent1,
+    PersonajeModulo
   ],
   providers: [],
   bootstrap: [AppComponent]
